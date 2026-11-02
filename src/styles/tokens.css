@@ -1,0 +1,26 @@
+/* Raw-concrete / terminal design tokens: graphite black, bone white, signal green, hazard amber.
+   Values are RGB channels so Tailwind can apply alpha. Flat fills, hard outlines, hard offset shadows; no glow, blur or gradients.
+   Roles: bone = text + outlines | signal green = action, active, progress, completed | amber = coming soon / warning (hazard tape)
+          red = errors only | --shadow = the muted hard-shadow color used by ordinary panels. */
+:root,
+:root[data-theme='dark'],
+:root[data-theme='light'] {
+  --ink: 8 11 9;               /* #080B09 text on bright fills */
+  --bg: 12 14 13;              /* #0C0E0D graphite black */
+  --bg-elevated: 18 21 19;
+  --surface: 24 28 26;
+  --surface-raised: 33 40 36;
+  --border: 46 54 49;          /* quiet dividers */
+  --border-strong: 190 198 188; /* bone outlines */
+  --shadow: 62 74 67;          /* muted hard shadow */
+  --fg: 232 236 226;           /* bone */
+  --fg-muted: 166 176 166;
+  --fg-subtle: 140 152 143;
+  --accent: 60 240 143;        /* #3CF08F signal green */
+  --accent-fg: 8 11 9;
+  --success: 90 235 160;
+  --warning: 255 159 28;       /* #FF9F1C hazard amber */
+  --danger: 255 90 90;         /* #FF5A5A */
+  --ai: 120 190 255;
+  color-scheme: dark;
+}
